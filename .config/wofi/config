@@ -1,0 +1,7 @@
+show = "drun"
+prompt=. 󰶵  . 󰅣 _󱍢   .  .  󰶵   󰶵  ..   󰶵  .    .  . .    󰶵󰶵  .  .   .    . 󰶵 .    . 󰶵󰶵  .    . 󰶵   .  󰶵󰶵󰶵  .     . 󰶵  . .  . 󰶵  . 󰶵 .     󰶵 .   .  󰶵  . 󰶵 .    .      .. . 󰶵󰶵 .     .  .  .󰶵  . .    . 󰶵 .   . 󰶵  . 󰶵 .  .   .. 󰶵󰶵 . . . . rm = "kitty"
+hide_scroll = true
+matching = "fuzzy"
+sort = true
+width=600
+height=400

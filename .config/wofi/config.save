@@ -1,0 +1,7 @@
+show = "drun"
+prompt = "Run"
+term = "kitty"
+hide_scroll = true
+matching = "fuzzy"
+sort = true
+case

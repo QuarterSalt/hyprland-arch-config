@@ -1,0 +1,36 @@
+[manager]
+show_hidden = true # Keep this line to show dotfiles by default
+
+# ... other manager options ...
+
+[open]
+# Rules for opening files. Yazi tries rules from top to bottom.
+# You can add rules here to open specific file types with specific programs.
+
+# Example: Open any file with a MIME type starting with 'text/' using the 'nano' opener
+# You can add more specific rules above this if needed (e.g., for .md files)
+[[open.prepend_rules]] # Using prepend_rules adds this rule before default ones
+mime = "text/*"
+use = "nano" # This refers to the opener defined below
+
+# ... other open rules ...
+
+[opener]
+# Define how specific openers execute commands.
+
+# Define the 'nano' opener to run the nano command with the selected file(s).
+[[opener.nano]]
+run = 'nano "$@"' # Execute nano with all selected files as arguments
+block = true      # Keep Yazi blocked until nano is closed
+
+[theme]
+fg = "rgba(255, 255, 255, 0.8)"       # Slightly transparent white
+bg = "rgba(51, 51, 51, 1.0)"          # Opaque dark gray
+select_fg = "rgba(0, 0, 0, 1.0)"        # Opaque black
+select_bg = "rgba(144, 238, 144, 0.7)" # Semi-transparent light green
+border_fg = "rgba(0, 255, 255, 0.5)"    # Semi-transparent cyan
+
+[theme.filetype]
+dir_fg = "rgba(173, 216, 230, 0.9)"    # Slightly transparent light blue
+link_fg = "rgba(255, 255, 0, 0.6)"      # Semi-transparent yellow
+".jpg_fg" = "rgba(255, 0, 255, 0.7)"    # Semi-transparent magenta
